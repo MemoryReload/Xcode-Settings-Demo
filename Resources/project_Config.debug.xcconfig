@@ -9,6 +9,6 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 SERVER_SCHEME = http
-SERVER_HOST = apis.memoryreload.com
+SERVER_HOST = test-apis.memoryreload.com
 
 PRODUCT_NAME = testProject

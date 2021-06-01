@@ -1,0 +1,14 @@
+//
+//  customConfig.xcconfig
+//  TestProject
+//
+//  Created by 何平 on 2021/5/29.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+SERVER_SCHEME = https
+SERVER_HOST = apis.memoryreload.com
+
+PRODUCT_NAME = testProject

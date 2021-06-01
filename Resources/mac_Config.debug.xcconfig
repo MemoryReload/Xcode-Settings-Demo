@@ -8,10 +8,12 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
+#include "../Pods/Target Support Files/Pods-Test-TestProject (macOS)/Pods-Test-TestProject (macOS).debug.xcconfig"
+
 BUILD = 128
 VERSION = 0.0.3
 
-PRODUCT_NAME = testProject-Mac
+PRODUCT_NAME = $(inherited)-Mac.debug
 
 
 

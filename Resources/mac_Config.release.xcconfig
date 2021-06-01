@@ -1,0 +1,19 @@
+//
+//  mac_Config.xcconfig
+//  TestProject
+//
+//  Created by 何平 on 2021/5/29.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "../Pods/Target Support Files/Pods-Test-TestProject (macOS)/Pods-Test-TestProject (macOS).release.xcconfig"
+
+BUILD = 128
+VERSION = 0.0.3
+
+PRODUCT_NAME = $(inherited)-Mac
+
+
+
