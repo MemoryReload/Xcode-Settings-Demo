@@ -1,0 +1,14 @@
+//
+//  iOS_Config.xcconfig
+//  TestProject
+//
+//  Created by 何平 on 2021/5/29.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+BUILD = 123
+VERSION = 0.0.1
+
+PRODUCT_NAME = testProject-iOS

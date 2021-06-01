@@ -19,11 +19,14 @@
 		63E1B0AC26624C1B0081D262 /* TestProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProjectApp.swift; sourceTree = "<group>"; };
 		63E1B0AD26624C1B0081D262 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		63E1B0AE26624C1E0081D262 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		63E1B0B326624C1E0081D262 /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E1B0B326624C1E0081D262 /* testProject-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "testProject-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E1B0B626624C1E0081D262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		63E1B0BB26624C1E0081D262 /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E1B0BB26624C1E0081D262 /* testProject-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "testProject-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E1B0BD26624C1E0081D262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63E1B0BE26624C1E0081D262 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		63E1B0CD266258310081D262 /* project_Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project_Config.xcconfig; sourceTree = "<group>"; };
+		63E1B0D02662596C0081D262 /* iOS_Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = iOS_Config.xcconfig; sourceTree = "<group>"; };
+		63E1B0D1266259810081D262 /* mac_Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = mac_Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,9 @@
 				63E1B0AC26624C1B0081D262 /* TestProjectApp.swift */,
 				63E1B0AD26624C1B0081D262 /* ContentView.swift */,
 				63E1B0AE26624C1E0081D262 /* Assets.xcassets */,
+				63E1B0CD266258310081D262 /* project_Config.xcconfig */,
+				63E1B0D02662596C0081D262 /* iOS_Config.xcconfig */,
+				63E1B0D1266259810081D262 /* mac_Config.xcconfig */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -67,8 +73,8 @@
 		63E1B0B426624C1E0081D262 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				63E1B0B326624C1E0081D262 /* TestProject.app */,
-				63E1B0BB26624C1E0081D262 /* TestProject.app */,
+				63E1B0B326624C1E0081D262 /* testProject-iOS.app */,
+				63E1B0BB26624C1E0081D262 /* testProject-Mac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,7 +113,7 @@
 			);
 			name = "TestProject (iOS)";
 			productName = "TestProject (iOS)";
-			productReference = 63E1B0B326624C1E0081D262 /* TestProject.app */;
+			productReference = 63E1B0B326624C1E0081D262 /* testProject-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		63E1B0BA26624C1E0081D262 /* TestProject (macOS) */ = {
@@ -124,7 +130,7 @@
 			);
 			name = "TestProject (macOS)";
 			productName = "TestProject (macOS)";
-			productReference = 63E1B0BB26624C1E0081D262 /* TestProject.app */;
+			productReference = 63E1B0BB26624C1E0081D262 /* testProject-Mac.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -206,6 +212,7 @@
 /* Begin XCBuildConfiguration section */
 		63E1B0C526624C1E0081D262 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63E1B0CD266258310081D262 /* project_Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -265,6 +272,7 @@
 		};
 		63E1B0C626624C1E0081D262 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63E1B0CD266258310081D262 /* project_Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -317,6 +325,7 @@
 		};
 		63E1B0C826624C1E0081D262 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63E1B0D02662596C0081D262 /* iOS_Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -330,7 +339,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.com.NealMarlin.TestProject;
-				PRODUCT_NAME = TestProject;
+				PRODUCT_NAME = "$(inherited)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -339,6 +348,7 @@
 		};
 		63E1B0C926624C1E0081D262 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63E1B0D02662596C0081D262 /* iOS_Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -352,7 +362,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.com.NealMarlin.TestProject;
-				PRODUCT_NAME = TestProject;
+				PRODUCT_NAME = "$(inherited)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -362,6 +372,7 @@
 		};
 		63E1B0CB26624C1E0081D262 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63E1B0D1266259810081D262 /* mac_Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -378,7 +389,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.com.NealMarlin.TestProject;
-				PRODUCT_NAME = TestProject;
+				PRODUCT_NAME = "$(inherited)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -386,6 +397,7 @@
 		};
 		63E1B0CC26624C1E0081D262 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63E1B0D1266259810081D262 /* mac_Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -402,7 +414,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.com.NealMarlin.TestProject;
-				PRODUCT_NAME = TestProject;
+				PRODUCT_NAME = "$(inherited)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
